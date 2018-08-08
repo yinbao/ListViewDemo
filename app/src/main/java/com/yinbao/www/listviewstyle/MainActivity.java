@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.yinbao.www.listviewstyle.GridView.ImgGridView;
 import com.yinbao.www.listviewstyle.ListView.group.TextGroupListView;
 import com.yinbao.www.listviewstyle.ListView.group.TextGroupRecyclerView;
 import com.yinbao.www.listviewstyle.ListView.img.ImgListView;
@@ -66,21 +67,25 @@ public class MainActivity extends AppCompatActivity {
 
                 case 3:
 
-                    startActivity(new Intent(MainActivity.this, ImgRecyclerView.class));
+                    startActivity(new Intent(MainActivity.this, ImgGridView.class));
                     break;
                 case 4:
 
-                    startActivity(new Intent(MainActivity.this, TextGroupListView.class));
+                    startActivity(new Intent(MainActivity.this, ImgRecyclerView.class));
                     break;
                 case 5:
+
+                    startActivity(new Intent(MainActivity.this, TextGroupListView.class));
+                    break;
+                case 6:
                     startActivity(new Intent(MainActivity.this, TextGroupRecyclerView.class));
 
                     break;
-                case 6:
+                case 7:
                     startActivity(new Intent(MainActivity.this, SelectListView.class));
 
                     break;
-                case 7:
+                case 8:
                     startActivity(new Intent(MainActivity.this, TwoListView.class));
 
                     break;
@@ -94,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
         mData.add("文字LV列表");
         mData.add("文字RV列表");
         mData.add("图片文字LV列表");
+        mData.add("图片文字GV列表");
         mData.add("图片文字RV列表");
         mData.add("分组LV列表");
         mData.add("分组RV列表");

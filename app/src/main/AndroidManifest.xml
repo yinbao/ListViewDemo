@@ -24,6 +24,7 @@
         <activity android:name=".ListView.group.TextGroupRecyclerView"/>
         <activity android:name=".ListView.select.SelectListView"/>
         <activity android:name=".ListView.twoList.TwoListView"/>
+        <activity android:name=".GridView.ImgGridView"/>
     </application>
 
 </manifest>
